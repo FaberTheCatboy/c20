@@ -1,8 +1,8 @@
-<img alt="" align="right" width="200" src="src/assets/librarian.png">
+<img alt="" align="right" width="200" src="src/assets/sdl.png">
 
 # The STALKER Developers Library
 
-This repo contains the source content and build scripts for the STALKER Developers Library (https://c20.reclaimers.net). It aims to document the immense tribal knowledge of the STALKER modding community and covers game engine details, the X-Ray Software Editing Kit, community tools, and guides for map-making.
+This repo contains the source content and build scripts for the STALKER Developers Library (SDL). It aims to document the immense tribal knowledge of the STALKER modding community and covers game engine details, the X-Ray Software Editing Kit, community tools, and guides for map-making.
 
 ## Contributing
 The library is not directly editable by its readers. This allows the editing team to verify information before it's added. However, we want and need the community's help filling in gaps. If you want to submit information or join the editing team, see the [Contributing page]().
@@ -27,20 +27,9 @@ npm ci
 npm run dev
 ```
 
-You can now visit http://localhost:8080/ in a browser and see the website. Edit content source files, then refresh your browser to see changes. You can run the server on a different port with `C20_PORT=9001 npm run dev`.
+You can now visit http://localhost:8080/ in a browser and see the website. Edit content source files, then refresh your browser to see changes. You can run the server on a different port with `SDL_PORT=9001 npm run dev`.
 
-The development server renders pages on-demand, but you can also run `npm run static` to fully render all pages to HTML and serve them. A full static build takes longer and isn't recommended for quick content writing. You can use it as a final step to verify the build will work once changes are merged. Note: [FFmpeg](https://ffmpeg.org/) is an optional dependency used to generate video thumbnails during a full build. It needs to be available on your system `PATH`. Windows users can simply download `ffmpeg.exe` and place it in the project root. If you don't want to set up FFmpeg just run `C20_NO_THUMBNAILS=true npm run static` and thumbnails won't be used.
-
-### Releasing
-The website is currently hosted as a static site in [AWS S3](https://aws.amazon.com/s3/), fronted by a [CloudFront](https://aws.amazon.com/cloudfront/) CDN distribution, managed in [reclaimers-aws](https://github.com/Sigmmma/reclaimers-aws). To deploy a new version, simple make changes to the `master` branch and a build/deploy will be triggered automatically with CodeBuild.
-
-As a backup, users with bucket permission can simply sync the `dist` directory to S3:
-
-```sh
-aws s3 sync --delete ./dist s3://reclaimers-wiki-files/
-```
-
-Because of cache TTLs, content may not appear updated immediately. An invalidation can be run in CloudFront to force updates but it will not affect clients unless they clear their browser cache. Live content can be seen by directly viewing the [S3 hosting origin][s3-origin].
+The development server renders pages on-demand, but you can also run `npm run static` to fully render all pages to HTML and serve them. A full static build takes longer and isn't recommended for quick content writing. You can use it as a final step to verify the build will work once changes are merged. Note: [FFmpeg](https://ffmpeg.org/) is an optional dependency used to generate video thumbnails during a full build. It needs to be available on your system `PATH`. Windows users can simply download `ffmpeg.exe` and place it in the project root. If you don't want to set up FFmpeg just run `SDL_NO_THUMBNAILS=true npm run static` and thumbnails won't be used.
 
 ### Technical goals
 An explicit choice was made to avoid typical managed or self-hosted Wiki platforms for this library and instead build a static site generator with custom features for Halo. The main tenets are:
