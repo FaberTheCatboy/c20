@@ -1,5 +1,5 @@
 {
-  "name": "c20",
+  "name": "SDL",
   "version": "3.0.0",
   "description": "This wiki is a comprehensive documentation of the STALKER software development kits, as well as tools created by users.",
   "main": "gulpfile.ts",
@@ -15,12 +15,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/csauve/c20.git"
+    "url": "git+https://github.com/FaberTheCatgirl/stalker-wiki.git"
   },
-  "author": "csauve <contact@t3hz0r.com> (https://t3hz0r.com)",
+  "author": "FaberTheCatgirl",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/csauve/c20/issues"
+    "url": "https://github.com/FaberTheCatgirl/stalker-wiki/issues"
   },
   "homepage": "https://c20.reclaimers.net",
   "devDependencies": {

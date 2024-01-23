@@ -32,7 +32,7 @@ You can now visit http://localhost:8080/ in a browser and see the website. Edit 
 The development server renders pages on-demand, but you can also run `npm run static` to fully render all pages to HTML and serve them. A full static build takes longer and isn't recommended for quick content writing. You can use it as a final step to verify the build will work once changes are merged. Note: [FFmpeg](https://ffmpeg.org/) is an optional dependency used to generate video thumbnails during a full build. It needs to be available on your system `PATH`. Windows users can simply download `ffmpeg.exe` and place it in the project root. If you don't want to set up FFmpeg just run `SDL_NO_THUMBNAILS=true npm run static` and thumbnails won't be used.
 
 ### Technical goals
-An explicit choice was made to avoid typical managed or self-hosted Wiki platforms for this library and instead build a static site generator with custom features for Halo. The main tenets are:
+An explicit choice was made to avoid typical managed or self-hosted Wiki platforms for this library and instead build a static site generator with custom features for STALKER. The main tenets are:
 
 * No API or dynamic content: the site should be easy to host and test locally with any HTTP server capable of serving files, and is easily cached on a CDN. No compute needed means low hosting costs. Even the search index is client-side.
 * Respect the time of the editors. Wiki features should empower them to write faster and easier. Nobody will write if it's a chore.

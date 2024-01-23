@@ -14,7 +14,7 @@ childOrder:
 "So Marked One, I saved you, but I'm not going to be pretending I did it to win favors upstairs. You do some jobs for me and we're even. Besides, keeping you busy might be a good way to deal with your amnesia. I'll see what I can find about this Strelok guy. I don't give a shit why you want this Strelok guy and mind my own busness. If you want to kill him.. Well.. You must have your reasons."
 {% /figure %}
 
-Welcome to **The STALKER Developers Library** (**SDL**), a project which aims to document and centralize the immense tribal knowledge of the Halo modding community. This is an unofficial resource by modders, for modders.
+Welcome to **The STALKER Developers Library** (**SDL**), a project which aims to document and centralize the immense tribal knowledge of the STALKER modding community. This is an unofficial resource by modders, for modders.
 
 _Mods_ are fan-made modifications to a game that change or add content, or implement unofficial bug fixes and new features. STALKER has a 20+ year tradition of modding which is still going strong. On SDL we focus on today's best practices and tools.
 
