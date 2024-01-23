@@ -1,13 +1,11 @@
 <img alt="" align="right" width="200" src="src/assets/librarian.png">
 
-# The Reclaimers Library
+# The STALKER Developers Library
 
-![](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoidlNBbmZ4ODFvZytxTit3VHRZcmxkQzNOV3lvejVWcEd3VVVKdEFvUWZXL3cyNlpqbHplaU5OL0lVUkJkdDR5L1o4N28yMStKUE43c1Q4bkgwTjEya3d3PSIsIml2UGFyYW1ldGVyU3BlYyI6IllacFUvMWJnZlVsdnhUcjYiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
-
-This repo contains the source content and build scripts for the Reclaimers Library (https://c20.reclaimers.net). It aims to document the immense tribal knowledge of the Halo modding community and covers game engine details, the Halo Editing Kit, community tools, and guides for map-making.
+This repo contains the source content and build scripts for the STALKER Developers Library (https://c20.reclaimers.net). It aims to document the immense tribal knowledge of the STALKER modding community and covers game engine details, the X-Ray Software Editing Kit, community tools, and guides for map-making.
 
 ## Contributing
-The library is not directly editable by its readers. This allows the editing team to verify information before it's added. However, we want and need the community's help filling in gaps. If you want to submit information or join the editing team, see the [Contributing page](https://c20.reclaimers.net/contributing).
+The library is not directly editable by its readers. This allows the editing team to verify information before it's added. However, we want and need the community's help filling in gaps. If you want to submit information or join the editing team, see the [Contributing page]().
 
 ## Development
 The codebase is essentially a [static site](https://en.wikipedia.org/wiki/Static_web_page) generator. We use [Gulp](https://gulpjs.com/) as the build task runner, with various tasks to process stylesheets, render pages, bundle JS ([esbuild](https://esbuild.github.io/)), and copy assets. All build results go into a `dist` folder that is ready to serve.
@@ -15,7 +13,7 @@ The codebase is essentially a [static site](https://en.wikipedia.org/wiki/Static
 Content is written in a combination of [Markdoc-flavoured markdown](https://markdoc.dev) and YAML files for structured data, which are rendered to HTML using [Preact](https://preactjs.com/) in TypeScript. Pages are also rendered in plaintext form and bundled into a client-side search index using [Minisearch](https://lucaong.github.io/minisearch/). We use [Sass](https://sass-lang.com/) as a CSS preprocessor.
 
 ### Building and testing
-In order to see content as it will appear online, you can run c20 in development mode. As a pre-requisite this project requires installing at least [Node.js v14+](https://nodejs.org/en/) and [Git LFS](https://git-lfs.github.com/).
+In order to see content as it will appear online, you can run SDL in development mode. As a pre-requisite this project requires installing at least [Node.js v14+](https://nodejs.org/en/) and [Git LFS](https://git-lfs.github.com/).
 
 If you have installed Git LFS _after_ checking out the project already, you'll need to run `git lfs install` and `git lfs pull` to download the objects. If you forget to do this the build will fail because `ffmpeg` will be unable to read video files as videos ("Invalid data found when processing input").
 
@@ -56,7 +54,7 @@ An explicit choice was made to avoid typical managed or self-hosted Wiki platfor
 Non-goals are user accounts, live editing, and on-site discussion pages. We use the pull request model and Discord discussions to ensure new information is vetted.
 
 ## License
-C20's codebase is licensed under version 3.0 of the GNU General Public License. A copy of its text can be found in COPYING.
+SDL's codebase is licensed under version 3.0 of the GNU General Public License. A copy of its text can be found in COPYING.
 
 The content of its pages, including articles, guides, images, tag descriptions, and other rendered metadata are available under the under the [CC BY-SA 3.0 license][cc-license].
 
